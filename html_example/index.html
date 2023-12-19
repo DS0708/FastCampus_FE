@@ -1,17 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=>, initial-scale=1.0">
   <title>HTML Example</title>
+  <!-- CSS 기본 설정 초기화 코드
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  -->
   <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
 </head>
+
 <body>
   <h1>Hello</h1>
   <h2>Hello</h2>
   <h3>Hello</h3>
   <img src="./dog.jpeg" alt="dog">
-  
+  <ol>
+    <li>사과</li>
+    <li>딸기</li>
+    <li>수박</li>
+    <li>오렌지</li>
+  </ol>
+  <ul>
+    <li>사과</li>
+    <li>딸기</li>
+    <li>수박</li>
+    <li>오렌지</li>
+  </ul>
+  <a href="https://naver.com" title="네이버로 이동">NAVER</a>
+  <a href="https://google.com" target="_blank">GOOGLE</a>
+  <p>
+    <span>동해물과</span> <span class="red">백두산이</span> 마르고 닳도록<br/>
+    하느님이 보우하사 <span class="red" id="abc">우리나라</span> 만세
+  </p>
+  <input type="text" value="DS!" disabled>
+  <input type="text" placeholder="입력하세요!">
+  <br/>
+  <label for="">
+    <input type="checkbox" checked>Apple
+  </label>
+  <label for="">
+    <input type="checkbox" >Banana
+  </label>
+  <br/>
+  <label for="">
+    <input type="radio" name="fruits" checked>Apple
+  </label>
+  <label for="">
+    <input type="radio" name="fruits">Banana
+  </label>
+  <br/>
+  <table>
+    <tr>
+      <td>A</td>
+      <td>B</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td colspan="2">D</td>
+    </tr>
+    <tr>
+      <td colspan="2">F</td>
+      <td>G</td>
+    </tr>
+  </table>
+  <div data-fruit-name="apple">사과</div>
+  <div data-fruit-name="banana">바나나</div>
+
 </body>
 </html>
