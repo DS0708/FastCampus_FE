@@ -1,0 +1,137 @@
+.fruit {
+  text-decoration: underline;
+}
+
+span.apple{
+  color: red;
+}
+
+ul > #orange{
+  color: orange;
+}
+
+.abc #c{
+  color: aqua;
+}
+
+#c + li{
+  text-decoration: underline;
+}
+
+#a ~ li{
+  background-color: yellow;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 1s;
+}
+
+.box:hover {
+  width: 300px;
+  background-color: royalblue;
+}
+
+.box:active{
+  background-color: rebeccapurple;
+}
+
+input:focus{
+  background-color: yellow;
+}
+
+.box2:focus{
+  background-color: aqua;
+}
+
+.fruits span:first-child{
+  color: red;
+}
+
+.fruits div:first-child {
+  color: blueviolet;
+}
+
+.fruits span {
+  text-decoration: underline;
+}
+
+.fruits h3:last-child{
+  color: aqua;
+}
+
+.fruits *:nth-child(2n){
+  color: blueviolet;
+}
+
+.fruits *:nth-child(n+4){
+  text-decoration: underline;
+}
+
+.fruits *:not(span){
+  background-color: yellow;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+.box3::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+[type]{
+  background-color: rebeccapurple;
+}
+[data-fruit-name]{
+  color: red;
+}
+
+.parent {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+}
+
+.child {
+  width: 100px;
+  height: inherit;
+  background-color: inherit;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+
+.hello {
+  color: red;
+}
+#hello {
+  color: blue;
+}
+div#hello{
+  font-size: 70px;
+}
+#hello{
+  color: green;
+}
+div#hello{
+  color: aqua;
+}
+.hello{
+  color: red !important;
+}
