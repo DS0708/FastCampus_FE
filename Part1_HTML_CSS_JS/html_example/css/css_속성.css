@@ -198,3 +198,15 @@ span.position{
   order: -1;
   flex-grow: 2; 
 }
+.transition{
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+}
+.transition:hover{
+  width: 400px;
+  background-color: black;
+  transition: width 1s, background-color 2s;
+  transition-delay: 1s;
+  transition-timing-function: linear;
+}
