@@ -119,3 +119,42 @@ div.background{
   background-repeat: no-repeat;
   background-position: center;
 }
+.position_wrap{
+  width: 300px;
+  height: 300px;
+  background-color: chartreuse;
+  position: relative;
+}
+.position_parent{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: relative;
+}
+.position_child{
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+}
+.position_child:nth-child(1){
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+}
+.position_child:nth-child(2){
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+span.position{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  position: absolute;
+  /* display : block 는 position absolute, fixed일때 생략 가능 */
+}
