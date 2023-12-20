@@ -1,6 +1,9 @@
 span {
   background-color: orange;
 }
+h2{
+  color: red;
+}
 .parent {
   width: 300px;
   height: 200px ;
@@ -35,4 +38,84 @@ span {
 }
 .container .item:first-child{
   border: 10px dashed;
+}
+div.radius {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 20px;
+  border-radius: 20px;
+}
+div.radius_right {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 20px;
+  border-radius: 0 20px 0 0;
+}
+.box_sizing{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border: 4px solid red;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+.overflow_parent{
+  width: 200px;
+  height: 200px;
+  background-color: royalblue;
+  padding: 20px;
+  margin: 20px;
+  overflow: hidden;
+}
+.overflow_child{
+  width: 300px;
+  height: 100px;
+  background-color: orange;
+}
+span.disply {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+div.opacity{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  opacity: 0.3;
+}
+p.font{
+  width: 270px;
+  padding: 10px;
+  border: 1px solid;
+  font-style: italic;
+  font-weight: bold;
+  box-sizing: border-box;
+  line-height: 2;
+  /* line-height: 200%; */
+  font-family: fantasy ,sans-serif;
+  text-decoration: underline;
+  text-indent: 20px; /*들여쓰기*/
+}
+a.letter{
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  font-size: 22px;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+div.background{
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  background-image: 
+  url("https://heropy.blog/css/images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
