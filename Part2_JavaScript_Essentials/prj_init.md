@@ -1,6 +1,6 @@
 # FE 개발 환경 세팅 
 
-1. `npm init -y`
+1. `npm init -y` (프로젝트 이름이 영어만 가능)
 2. `npm install parcel-bundler -D` : -D 는 devDependencies로써 개발용 의존성 패키지 설치 (개발할떄만 필요하고 웹브라우저에서는 필요없다는 뜻)
 3. 필요한 패키지 설치 : ex) `npm install lodash` 등등 (웹 브라우저에서 실제 동작해야 하는 패키지)
   - github에서 내려 받았을 떄는 `npm install` 입력 시 자동으로 생성
