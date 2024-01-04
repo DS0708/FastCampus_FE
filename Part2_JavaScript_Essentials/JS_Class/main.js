@@ -10,7 +10,7 @@ const heropy = {
 console.log(heropy)
 console.log(heropy.getFullName())
 
-// Lateral
+// 기존 방식
 function User(first, last){
   this.firstName = first
   this.lastName = last
