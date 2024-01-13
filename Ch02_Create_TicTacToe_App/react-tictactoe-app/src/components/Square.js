@@ -1,19 +1,38 @@
 import React from "react";
 import "./Square.css"
 
-export default class Square extends React.Component {
+const Square = ({onClick, value}) => {
 
-  render(){
-    return (
-      <button className="square"
-        onClick={ () => {this.props.onClick()} } 
-      >
-        { this.props.value }
-      </button>
-    )
-  }
-  
+  return ( 
+    <button className = "square"
+    onClick = {
+      () => {
+        onClick()
+      }
+    } >
+    {
+      value
+    } </button>
+  )
+
+
 }
+
+export default Square;
+
+// export default class Square extends React.Component {
+
+//   render(){
+//     return (
+//       <button className="square"
+//         onClick={ () => {this.props.onClick()} } 
+//       >
+//         { this.props.value }
+//       </button>
+//     )
+//   }
+
+// }
 
 // Props vs State
 
@@ -26,5 +45,5 @@ export default class Square extends React.Component {
 /* State
 1. 부모 컴포넌트에서 자녀 컴포넌트로 데이터를 보내는게 아닌 해당 컴포넌트 내부에서 데이터를 전달할 때 사용
 2. State는 mutable하다
-3. State가 변하면 re-rendere된다.
-*/ 
+3. State가 변하면 re-render된다.
+*/
