@@ -3,22 +3,37 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
-import counter from './reducers/counter';
+import { applyMiddleware ,createStore } from 'redux';
+import rootReducer from './reducers/index';
+import { Provider } from'react-redux';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const store = createStore(counter);
+const loggerMiddleware = (store: any) => (next: any) => (action: any) => {
+  console.log("store",store);
+  console.log('action',action);
+  next(action); 
+}
+
+const middleware = applyMiddleware(loggerMiddleware);
+
+const store = createStore(rootReducer);
+
+//todos reducer 확인
+// store.dispatch({type: 'ADD_TODO', text: 'todo1'});
+// console.log('store.getState',store.getState());
 
 const render = () => root.render(
   <React.StrictMode>
-    <App 
-      value={store.getState()}
-      onIncrement={() => store.dispatch({type: 'INCREMENT'})}
-      onDecrement={() => store.dispatch({type: 'DECREMENT'})}
-    /> 
+    <Provider store={store}>
+      <App 
+        value={store.getState()}
+        onIncrement={() => store.dispatch({type: 'INCREMENT'})}
+        onDecrement={() => store.dispatch({type: 'DECREMENT'})}
+      /> 
+    </Provider>
   </React.StrictMode>
 );
 render();
