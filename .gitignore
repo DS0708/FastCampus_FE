@@ -1,5 +1,10 @@
-## npm i
+# Mac
+.DS_Store
 
+## npm i
 node_modules/
 .cache/
 dist/
+
+##LectureNote
+FastCampus_LectureNotes/
